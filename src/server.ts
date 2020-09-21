@@ -1,5 +1,6 @@
 import express from 'express';
 import routes from './routes';
+import './database';
 // Start Express
 const app = express();
 // Enable Json
