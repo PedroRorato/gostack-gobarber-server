@@ -5,7 +5,8 @@ import {
     PrimaryGeneratedColumn,
     CreateDateColumn,
     UpdateDateColumn,
-    ManyToOne,, JoinColumn
+    ManyToOne,
+    JoinColumn,
 } from 'typeorm';
 
 import User from './User';
