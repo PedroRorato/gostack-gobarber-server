@@ -4,13 +4,6 @@ import CreateUserService from '../services/CreateUserService';
 
 const usersRouter = Router();
 
-usersRouter.get('/', async (request, response) => {
-    const appointmentsRepository = getCustomRepository(AppointmentsRepository);
-    const appointments = await appointmentsRepository.find();
-
-    return response.json(appointments);
-});
-
 usersRouter.post('/', async (request, response) => {
     try {
         const { name, email, password } = request.body;
